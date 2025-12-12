@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <title>Welcome!</title>
+    <style type="text/css">
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .container {
+            margin-top: 50px;
+            text-align: center;
+            float: none;
+            width: 60%;
+            max-width: 900px;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px 40px;
+            box-sizing: border-box;
+            font-size: 20px;
+            background-color: white;
+            margin: 0 auto;
+
+
+            height: auto;
+            max-height: none;
+            overflow: visible;
+            display: block;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 30%;
+            max-width: 900px;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px 40px;
+            box-sizing: border-box;
+            font-size: 20px;
+            background-color: white;
+            text-align: center;
+        }
+
+
+        .time {
+            width: 50%;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 5px;
+            text-align: center;
+            margin: 0 auto;
+            padding: 15px 0;
+            /*position: relative;*/
+            /*padding-bottom: 30px;*/
+            font-size: 16px;
+            /*right: 40px;*/
+        }
+        h1, h2 {
+            margin: 10px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 18px;
+        }
+
+
+    </style>
+    <h:outputScript library="js" name="clock.js" />
+</h:head>
+<h:body>
+    <div class="container">
+        <div class="time" id="form:currentTime">
+        </div>
+        <header>
+            <h1>Хлопцов Сергей </h1>
+            <h2>Лабораторная работа №3 <br></br>
+                P3213, Вариант 1744</h2>
+        </header>
+        <h:form id="form" class="buttons-container">
+            <h:commandButton value="Войти" styleClass="mybutton" action="main?faces-redirect=true" id="go-to-main-button"/>
+        </h:form>
+    </div>
+</h:body>
+</html>
